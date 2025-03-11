@@ -1,4 +1,4 @@
-# Solana Copy Trading Bot (Fast Copy Trading in 1 Block)
+# Solana Copy Trading Bot (Fast Copy Trading in 0-1 Block)
 
 
 
