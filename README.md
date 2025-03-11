@@ -1,5 +1,9 @@
 # Solana Copy Trading Bot (Fast Copy Trading in 1 Block)
 
+
+Uploading copy trading bot_manual sell.mp4…
+
+
 ## Overview
 
 The Solana Copy Trading Bot enables real-time replication of target wallets’ transactions with remarkable efficiency, operating within a single blockchain block. This tool is designed for traders seeking to leverage the trading strategies of successful wallets swiftly.
@@ -23,6 +27,7 @@ https://solscan.io/tx/4otYRYWu5BovTtCYQ7BiUQUg5hDqJk2Rr9LNzm8rMC5AQLiTS3utLEmao6
   
 - **Geyser Usage**: Available to use Helius or yellowstone Geyser. (Yellowstone is faster)
 
+- **Manual Sell**: Able to manually sell if you wanna sell it any time
 ## Installation
 
 To set up the Solana PumpFun Sniper Bot, please follow these instructions:
