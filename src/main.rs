@@ -61,7 +61,7 @@ async fn main() {
     while let Some(Ok(msg)) = read.next().await {
         if let WsMessage::Text(text) = msg {
             let json: Value = serde_json::from_str(&text).unwrap();
-            
+
             // println!("json: {:#?}", json);
 
             let sig = json["params"]["result"]["signature"].to_string();
