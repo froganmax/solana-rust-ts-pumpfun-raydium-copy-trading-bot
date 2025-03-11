@@ -1,7 +1,9 @@
 # Solana Copy Trading Bot (Fast Copy Trading in 1 Block)
 
 
-Uploading copy trading bot_manual sell.mp4…
+
+https://github.com/user-attachments/assets/3e5c7d40-217d-4c3c-aef9-224bc4878997
+
 
 
 ## Overview
