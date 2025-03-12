@@ -36,8 +36,8 @@ To set up the Solana PumpFun Sniper Bot, please follow these instructions:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/froganmax/solana-rust-copy-trading-bot
-   cd solana-rust-copy-trading-bot
+   git clone https://github.com/froganmax/solana-rust-ts-pumpfun-raydium-copy-trading-bot
+   cd solana-rust-ts-pumpfun-raydium-copy-trading-bot
 
 ## Support
 
