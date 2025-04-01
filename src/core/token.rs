@@ -37,33 +37,3 @@ pub async fn get_account_info(
     Ok(account)
 }
 
-pub async fn get_mint_info(
-    client: Arc<solana_client::nonblocking::rpc_client::RpcClient>,
-    _keypair: Arc<Keypair>,
-    address: &Pubkey,
-) -> TokenResult<StateWithExtensionsOwned<Mint>> {
-    let program_client = Arc::new(ProgramRpcClient::new(
-        client.clone(),
-        ProgramRpcClientSendTransaction,
-    ));
-    let account = program_client
-        .get_account(*address)
-        .await
-        .map_err(TokenError::Client)?
-        .ok_or(TokenError::AccountNotFound)
-        .inspect_err(|err| println!("{} {}: mint {}", address, err, address))?;
-
-    if account.owner != spl_token::ID {
-        return Err(TokenError::AccountInvalidOwner);
-    }
-
-    let mint_result = StateWithExtensionsOwned::<Mint>::unpack(account.data).map_err(Into::into);
-    let decimals: Option<u8> = None;
-    if let (Ok(mint), Some(decimals)) = (&mint_result, decimals) {
-        if decimals != mint.base.decimals {
-            return Err(TokenError::InvalidDecimals);
-        }
-    }
-
-    mint_result
-}
