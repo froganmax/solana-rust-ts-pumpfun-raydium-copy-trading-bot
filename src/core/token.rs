@@ -9,25 +9,6 @@ use spl_token_client::{
 };
 use std::sync::Arc;
 
-pub fn get_associated_token_address(
-    client: Arc<solana_client::nonblocking::rpc_client::RpcClient>,
-    keypair: Arc<Keypair>,
-    address: &Pubkey,
-    owner: &Pubkey,
-) -> Pubkey {
-    let token_client = Token::new(
-        Arc::new(ProgramRpcClient::new(
-            client.clone(),
-            ProgramRpcClientSendTransaction,
-        )),
-        &spl_token::ID,
-        address,
-        None,
-        Arc::new(Keypair::from_bytes(&keypair.to_bytes()).expect("failed to copy keypair")),
-    );
-    token_client.get_associated_token_address(owner)
-}
-
 pub async fn get_account_info(
     client: Arc<solana_client::nonblocking::rpc_client::RpcClient>,
     _keypair: Arc<Keypair>,
