@@ -36,37 +36,17 @@ fn get_unit_limit() -> u32 {
         .and_then(|v| u32::from_str(&v).ok())
         .unwrap_or(300_000)
 }
+pub async fn get_mint_info(
+    client: Arc<solana_client::nonblocking::rpc_client::RpcClient>,
+    _keypair: Arc<Keypair>,
+    address: &Pubkey,
+) -> TokenResult<StateWithExtensionsOwned<Mint>> {
+    let program_client = Arc::new(ProgramRpcClient::new(
+        client.clone(),
+        ProgramRpcClientSendTransaction,
+    ))
+}
 
-pub async fn new_signed_and_send(
-    client: &RpcClient,
-    keypair: &Keypair,
-    mut instructions: Vec<Instruction>,
-    use_jito: bool,
-    logger: &Logger,
-) -> Result<Vec<String>> {
-    let unit_price = get_unit_price();
-    let unit_limit = get_unit_limit();
-    // If not using Jito, manually set the compute unit price and limit
-    if !use_jito {
-        let modify_compute_units =
-            solana_sdk::compute_budget::ComputeBudgetInstruction::set_compute_unit_price(
-                unit_price,
-            );
-        let add_priority_fee =
-            solana_sdk::compute_budget::ComputeBudgetInstruction::set_compute_unit_limit(
-                unit_limit,
-            );
-        instructions.insert(0, modify_compute_units);
-        instructions.insert(1, add_priority_fee);
-    }
-    // send init tx
-    let recent_blockhash = client.get_latest_blockhash()?;
-    let txn = Transaction::new_signed_with_payer(
-        &instructions,
-        Some(&keypair.pubkey()),
-        &vec![keypair],
-        recent_blockhash,
-    );
 
     let start_time = Instant::now();
     let mut txs = vec![];
