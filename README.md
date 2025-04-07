@@ -31,7 +31,7 @@ https://solscan.io/tx/3fvcP6jQvo6dGiwAPZqp5hJThbjzeKU3NMeBmoPvksYX4VPUyPpdr5iyfm
 
 - **Target Wallet List**: Easily add and manage a list of target wallets for trading replication.
 
-- **Racing Transaction Confirm (My Bot's Unique Feature)**: Send Transactions to multiple tx confim providers like jito, nextBlock, BloxRoute, Temporal. And only confirm the fastest one. So always provide the fastest tx confirming.
+- <span style="color:red;">Racing Transaction Confirm (My Bot's Unique Feature)</span>: Send Transactions to multiple tx confim providers like jito, nextBlock, BloxRoute, Temporal. And only confirm the fastest one. So always provide the fastest tx confirming.
   
 - **Multi-DEX Support**: Compatible with various decentralized exchanges, including Jupiter, Raydium, and PumpFun Swap. Plans to integrate Meteora Swap are underway.
   
