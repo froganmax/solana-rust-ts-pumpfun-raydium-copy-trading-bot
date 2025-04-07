@@ -11,9 +11,9 @@ https://github.com/user-attachments/assets/3e5c7d40-217d-4c3c-aef9-224bc4878997
 The Solana Copy Trading Bot enables real-time replication of target wallets’ transactions with remarkable efficiency, operating within a single blockchain block. This tool is designed for traders seeking to leverage the trading strategies of successful wallets swiftly.
 
 ## Example Transactions(0 Block)
-Target Address: https://solscan.io/account/suqh5sHtr8HyJ7q8scBimULPkPpA557prMG47xCHQfK (Top Trader with 80-90% Win Rate)
+Target Address: https://solscan.io/account/suqh5sHtr8HyJ7q8scBimULPkPpA557prMG47xCHQfK#defiactivities (Top Trader with 80-90% Win Rate)
 
-Bot Wallet: https://solscan.io/account/8io2kFbfUsGpggVknDkWQdeHyTHR5HL4dFfnTHxNwSfo
+Bot Wallet: https://solscan.io/account/8io2kFbfUsGpggVknDkWQdeHyTHR5HL4dFfnTHxNwSfo#defiactivities
 
 - Source Transaction(BUY):
 https://solscan.io/tx/5E3M4nmPJiitSX7KgyiSJ2fhc62NCoFCbc8w5muG1c4HKhUWVgtARL1Hz29LwzP7WSf52FGkJ2GSkKTsoq7s3ACH
@@ -27,11 +27,12 @@ https://solscan.io/tx/i8sNjNShZbU8yHjvVU9UPzyvYQqSgXoeFzYmFjdR12Fd1MYHrPCnDwNxyK
 - Copied Transaction(SELL):
 https://solscan.io/tx/3fvcP6jQvo6dGiwAPZqp5hJThbjzeKU3NMeBmoPvksYX4VPUyPpdr5iyfmHn2b1HbtyydQNudnHEGJvEt7VPNcXe
 
+## Unique Feature: Racing Transaction Confirm
+Send Transactions to multiple tx confim providers like jito, nextBlock, BloxRoute, Temporal at the same time. And only confirm the fastest one. So always provide the fastest tx confirming.
+
 ## Core Features
 
 - **Target Wallet List**: Easily add and manage a list of target wallets for trading replication.
-
-- <span style="color:red;">Racing Transaction Confirm (My Bot's Unique Feature)</span>: Send Transactions to multiple tx confim providers like jito, nextBlock, BloxRoute, Temporal. And only confirm the fastest one. So always provide the fastest tx confirming.
   
 - **Multi-DEX Support**: Compatible with various decentralized exchanges, including Jupiter, Raydium, and PumpFun Swap. Plans to integrate Meteora Swap are underway.
   
