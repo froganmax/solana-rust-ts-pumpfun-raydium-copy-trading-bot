@@ -10,14 +10,20 @@ https://github.com/user-attachments/assets/3e5c7d40-217d-4c3c-aef9-224bc4878997
 
 The Solana Copy Trading Bot enables real-time replication of target wallets’ transactions with remarkable efficiency, operating within a single blockchain block. This tool is designed for traders seeking to leverage the trading strategies of successful wallets swiftly.
 
-## Example Transactions
+## Example Transactions(0 Block)
+Target Address: https://solscan.io/account/suqh5sHtr8HyJ7q8scBimULPkPpA557prMG47xCHQfK (Top Trader with 80-90% Win Rate)
+Bot Wallet: https://solscan.io/account/8io2kFbfUsGpggVknDkWQdeHyTHR5HL4dFfnTHxNwSfo
 - Source Transaction:
-
-https://solscan.io/tx/3THMKgvGBfcDy9zLW1USESkDvTZ8jgeJAwuZQ4NuwN6uTF9dWZwzbHXrU8ZVRQEKFXs5dBBCNbvgMZUwHR4jtg1U
+https://solscan.io/tx/5E3M4nmPJiitSX7KgyiSJ2fhc62NCoFCbc8w5muG1c4HKhUWVgtARL1Hz29LwzP7WSf52FGkJ2GSkKTsoq7s3ACH
 
 - Copied Transaction:
+https://solscan.io/tx/2hS7u22TX2RqyDt96m5SEPEB4Va9HJwz6wzoCw1Ru8jWpiz8NLc57DGPfxAfU38MuZQe2DpZKqn4DWsxK3uXVbTa
 
-https://solscan.io/tx/4otYRYWu5BovTtCYQ7BiUQUg5hDqJk2Rr9LNzm8rMC5AQLiTS3utLEmao67ZFGTBdeEKBXyUfnMXUWT5Mzg3DgDt
+- Source Transaction:
+https://solscan.io/tx/i8sNjNShZbU8yHjvVU9UPzyvYQqSgXoeFzYmFjdR12Fd1MYHrPCnDwNxyK6jcTiqpi2Ya4JsjzziwuDMj6HNZCX
+
+- Copied Transaction:
+https://solscan.io/tx/3fvcP6jQvo6dGiwAPZqp5hJThbjzeKU3NMeBmoPvksYX4VPUyPpdr5iyfmHn2b1HbtyydQNudnHEGJvEt7VPNcXe
 
 ## Core Features
 
